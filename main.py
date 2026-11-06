@@ -20,7 +20,7 @@ def verify_db():
         missing = required - existing
         if missing:
             raise RuntimeError("Database is missing tables: " + ", ".join(sorted(missing)) +
-                               ". Use the original ecommerce.db or run setup.sql on a backup.")
+                               ". Use the original ecommerce.db or run setup.sql on a backup")
 
 class App(tk.Tk):
     def __init__(self):
